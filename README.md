@@ -270,15 +270,6 @@ GPU config is nil for instance type <SKU>
 | Standard_NV24s_v3 | M60 | 2 | 16 GB | |
 | Standard_NV48s_v3 | M60 | 4 | 32 GB | |
 
-### ❌ NOT Supported (Common Mistakes)
-
-| SKU | Why Not Supported |
-|-----|-------------------|
-| Standard_NV6ads_A10_v5 | Not in KAITO config |
-| Standard_NV12ads_A10_v5 | Not in KAITO config |
-| Standard_NV18ads_A10_v5 | Not in KAITO config |
-| Standard_NV36adms_A10_v5 | Not in KAITO config |
-
 > **Tip**: For A10 GPUs, use `Standard_NV36ads_A10_v5` or `Standard_NV72ads_A10_v5`
 
 ---
