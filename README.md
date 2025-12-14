@@ -188,9 +188,7 @@ kubectl apply -f workspace-phi4.yaml
 
 ---
 
-## ✅ Pros and Cons
-
-### ✅ Pros of KAITO
+### ✅ Benefit of KAITO
 
 | Category | Advantage |
 |----------|-----------|
@@ -204,30 +202,6 @@ kubectl apply -f workspace-phi4.yaml
 | **Observability** | Built-in Prometheus metrics for vLLM |
 | **Fine-tuning Support** | Supports LoRA adapters for model customization |
 | **Multi-GPU** | Automatic tensor parallelism for large models |
-
-### ❌ Cons of KAITO
-
-| Category | Limitation |
-|----------|------------|
-| **Limited SKU Support** | Only specific GPU SKUs are supported (see table above) |
-| **Azure Only** | Currently only works on AKS (no GKE/EKS support) |
-| **Model Selection** | Limited to KAITO's preset models (can't use arbitrary models easily) |
-| **Customization** | Less flexibility for advanced vLLM/inference configurations |
-| **Learning Curve** | New CRD concepts to learn (Workspace, RAGEngine) |
-| **Preview Status** | Some features still in preview, may change |
-| **Dependency** | Requires OIDC issuer and workload identity |
-| **Debugging** | Troubleshooting requires understanding KAITO internals |
-
-### When to Use KAITO
-
-| ✅ Use KAITO When | ❌ Consider Alternatives When |
-|-------------------|------------------------------|
-| Deploying supported preset models | Need unsupported models |
-| Want fast time-to-production | Need fine-grained control over inference |
-| Team lacks ML infrastructure expertise | Have dedicated ML platform team |
-| Using Azure/AKS | Using GKE, EKS, or on-prem |
-| Prototyping and demos | Production with specific compliance needs |
-| Need auto-scaling GPU workloads | Fixed, long-running GPU workloads |
 
 ---
 
