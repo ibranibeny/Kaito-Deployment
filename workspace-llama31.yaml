@@ -1,0 +1,17 @@
+apiVersion: kaito.sh/v1beta1
+kind: Workspace
+metadata:
+  name: workspace-llama-3-1-8b-instruct
+resource:
+  instanceType: "Standard_NV36ads_A10_v5"
+  labelSelector:
+    matchLabels:
+      apps: llama-3-1-8b-instruct
+inference:
+  preset:
+    name: llama-3.1-8b-instruct
+    accessMode: private
+    presetOptions:
+      # Llama requires HuggingFace authentication
+      # Create secret: kubectl create secret generic hf-token --from-literal=HF_TOKEN=<your-token>
+      modelAccessSecret: hf-token

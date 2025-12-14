@@ -1,0 +1,50 @@
+# KAITO Workspace Test - REST Client
+# Replace port 8080 with your port-forwarded port
+
+@baseUrl = http://localhost:8080
+@model = phi-4-mini-instruct
+
+### Basic Chat
+POST {{baseUrl}}/v1/chat/completions
+Content-Type: application/json
+
+{
+    "model": "{{model}}",
+    "messages": [
+        {"role": "user", "content": "What is Kubernetes?"}
+    ],
+    "temperature": 0.7,
+    "max_tokens": 500
+}
+
+### Explain KAITO
+POST {{baseUrl}}/v1/chat/completions
+Content-Type: application/json
+
+{
+    "model": "{{model}}",
+    "messages": [
+        {"role": "user", "content": "Explain KAITO in simple terms"}
+    ],
+    "temperature": 0.7,
+    "max_tokens": 500
+}
+
+### Code Generation
+POST {{baseUrl}}/v1/chat/completions
+Content-Type: application/json
+
+{
+    "model": "{{model}}",
+    "messages": [
+        {"role": "user", "content": "Write a Python function to sort a list"}
+    ],
+    "temperature": 0.3,
+    "max_tokens": 800
+}
+
+### List Models
+GET {{baseUrl}}/v1/models
+
+### Health Check
+GET {{baseUrl}}/health
