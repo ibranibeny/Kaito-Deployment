@@ -21,7 +21,7 @@ Deploy and manage AI models on AKS using **KAITO** and **Headlamp**.
 |---------|-------------|
 | **Simplified Deployment** | Deploy AI models with a single YAML manifest instead of complex multi-step processes |
 | **Automatic GPU Provisioning** | KAITO automatically provisions GPU nodes when you deploy a workspace |
-| **Pre-configured Models** | 50+ popular models (Llama, Phi, Mistral, Falcon) ready to deploy with optimized settings |
+| **Pre-configured Models** | Popular models (Llama, Phi, Mistral, Falcon) ready to deploy with optimized settings |
 | **Auto-scaling** | Scales GPU nodes based on workload demand |
 | **Cost Optimization** | Nodes are only provisioned when needed, reducing idle GPU costs |
 | **Kubernetes Native** | Works with existing K8s tools, RBAC, namespaces, and monitoring |
