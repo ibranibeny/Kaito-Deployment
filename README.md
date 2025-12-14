@@ -196,7 +196,7 @@ kubectl apply -f workspace-phi4.yaml
 | **Speed** | 3x faster deployment compared to manual setup |
 | **Reliability** | Pre-tested configurations for each model |
 | **Cost Efficiency** | GPU nodes auto-deprovision when workspace is deleted |
-| **Model Catalog** | 50+ models with optimized presets (Llama, Phi, Mistral, etc.) |
+| **Model Catalog** | models with optimized presets (Llama, Phi, Mistral, etc.) |
 | **Kubernetes Native** | Uses CRDs, integrates with existing K8s workflows |
 | **Headlamp Integration** | GUI for non-CLI users, chat interface for testing |
 | **Observability** | Built-in Prometheus metrics for vLLM |
