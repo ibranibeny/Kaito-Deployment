@@ -1,7 +1,7 @@
 title: KAITO on AKS
 description: Deploy AI Models with KAITO and Headlamp on Azure Kubernetes Service
 remote_theme: just-the-docs/just-the-docs
-color_scheme: dark
+color_scheme: light
 
 mermaid:
   version: "11"
