@@ -1,0 +1,15 @@
+apiVersion: kaito.sh/v1beta1
+kind: Workspace
+metadata:
+  name: workspace-gpt-oss-20b
+  labels:
+    app: gpt-oss-20b
+resource:
+  count: 3
+  instanceType: "Standard_NV12ads_A10_v5"
+  labelSelector:
+    matchLabels:
+      apps: gpt-oss-20b
+inference:
+  preset:
+    name: "gpt-oss-20b"

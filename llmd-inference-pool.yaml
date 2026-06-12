@@ -1,0 +1,16 @@
+apiVersion: inference.networking.x-k8s.io/v1alpha2
+kind: InferencePool
+metadata:
+  name: kaito-gpt-oss-20b-pool
+  namespace: default
+spec:
+  # Target the KAITO-deployed model service
+  targetRef:
+    kind: Service
+    name: workspace-gpt-oss-20b
+  # Scheduling configuration
+  scheduling:
+    # Enable prefix-cache aware routing for better KV cache reuse
+    prefixCacheAware: true
+    # Load balancing strategy: least-loaded, round-robin, random
+    loadBalancing: least-loaded

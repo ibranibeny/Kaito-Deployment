@@ -1,0 +1,10 @@
+export RAND=6848
+export LOCATION=indonesiacentral
+export RG_NAME=rg-kaito-multinode-6848
+export AKS_NAME=aks-kaito-mn-6848
+export NODE_COUNT=3
+export MODEL_NAME=gpt-oss-20b
+export INSTANCE_TYPE=Standard_NV12ads_A10_v5
+export GPU_MEMORY_GB=8
+export HF_TOKEN=<YOUR_HF_TOKEN>
+export KUBECONFIG=/home/benyibrani/.kube/config-kaito-multinode-6848
