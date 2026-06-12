@@ -1,5 +1,5 @@
-title: KAITO on AKS - Architecture & Deployment Guide
-description: Deploy AI Models with KAITO and Headlamp on Azure Kubernetes Service (AKS)
+title: KAITO on AKS
+description: Deploy AI Models with KAITO and Headlamp on Azure Kubernetes Service
 remote_theme: just-the-docs/just-the-docs
 color_scheme: dark
 
@@ -11,9 +11,13 @@ plugins:
 
 nav_enabled: true
 search_enabled: true
+heading_anchors: true
 
 aux_links:
-  "GitHub Repository":
+  "GitHub Repo":
     - "https://github.com/ibranibeny/Kaito-Deployment"
 
-footer_content: "KAITO on AKS - AI Model Deployment with Kubernetes"
+footer_content: "KAITO on AKS — AI Model Deployment Workshop"
+
+back_to_top: true
+back_to_top_text: "Back to top"
